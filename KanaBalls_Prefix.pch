@@ -1,0 +1,17 @@
+//
+// Prefix header for all source files of the 'KanaBalls' target in the 'KanaBalls' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif
+
+#define AppDelegate (KanaBallsAppDelegate*)[[UIApplication sharedApplication] delegate]
+
+#ifdef DEBUG
+#    define DLog(...) NSLog(__VA_ARGS__)
+#else
+#    define DLog(...) /* */
+#endif
+#define ALog(...) NSLog(__VA_ARGS__)
